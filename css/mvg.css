@@ -1,0 +1,292 @@
+@import url(https://fonts.googleapis.com/css?family=Syncopate:400,700|Montserrat+Alternates:400,700);
+
+/*===========================================================================*/
+body {
+    font-family             : 'Montserrat Alternates', sans-serif;
+    font-style              : normal;
+    font-weight             : 400;
+    font-size               : 13px;
+    text-transform          : none;
+    text-decoration         : none;
+    letter-spacing          : 0em;
+    word-spacing            : 0.133em;
+    line-height             : 1.91;
+
+    color                   : #000000;
+    background              : #cccccc url('../images/strepen.png') repeat;
+    x-webkit-font-smoothing : antialiased;
+    -webkit-font-smoothing  : subpixel-antialiased;
+    x-webkit-font-smoothing : none;
+}
+div {
+    position : absolute;
+    border   : none;
+}
+p {
+    margin-top    : 2px;
+    margin-bottom : 2px;
+    text-align    : justify;
+}
+H1 {
+    font-family     : 'Montserrat Alternates', sans-serif;
+    font-style      : normal;
+    font-weight     : 700;
+    font-size       : 21px;
+    text-transform  : none;
+    text-decoration : none;
+    letter-spacing  : 0em;
+    word-spacing    : 0em;
+    line-height     : 1.4;
+
+    margin-top      : 24px;
+    margin-bottom   : 14px;
+    color           : #3b5500;
+}
+H1.first {
+    margin-top : 4px;
+}
+.noselect {
+    -webkit-touch-callout : none;
+    -webkit-user-select   : none;
+    -khtml-user-select    : none;
+    -moz-user-select      : none;
+    -ms-user-select       : none;
+    user-select           : none;
+    cursor                : pointer;
+}
+.more {
+    float  : right;
+    cursor : pointer;
+}
+/*===========================================================================*/
+.main {
+    top         : 0px;
+    left        : 50%;
+    height      : 1156px;
+    width       : 960px;
+    margin-left : -480px;
+}
+/*===========================================================================*/
+.logo {
+    position : absolute;
+    top      : 44px;
+    left     : 240px;
+    height   : 89px;
+    width    : 480px;
+}
+/*===========================================================================*/
+.buttonBar {
+    left   : 37px;
+    top    : 178px;
+    width  : 887px;
+    height : 41px;
+}
+.buttonBar div {
+    font-family     : 'Syncopate', sans-serif;
+    font-style      : normal;
+    font-weight     : 400;
+    font-size       : 9.6px;
+    text-transform  : none;
+    text-decoration : none;
+    line-height     : 1.11;
+
+    width           : 132px;
+    height          : 25px;
+    text-align      : center;
+    padding-top     : 16px;
+    padding-bottom  : 0px;
+}
+.buttonBar div.inact {
+    background : url(../images/buttonInactive.png);
+    color      : #ffffff;
+    cursor     : pointer;
+}
+.buttonBar div.act {
+    background : url(../images/buttonActive.png);
+    color      : #3b5500;
+    cursor     : default;
+}
+.buttonBar div.inact:hover {
+    background : url(../images/buttonHover.png);
+}
+.buttonBar div.inact:active {
+    background : url(../images/buttonActive.png);
+}
+.buttonBar .left {
+    background : url(../images/buttonLeft.png);
+    width      : 33px;
+}
+.buttonBar .middle {
+    background : url(../images/buttonMiddle.png) repeat-x;
+    padding    : 0px;
+    height     : 41px;
+}
+.buttonBar .right {
+    background : url(../images/buttonRight.png);
+    width      : 33px;
+}
+.buttonBar .flags {
+    float    : right;
+    position : relative;
+    top      : 0px;
+    width    : 57px;
+}
+.buttonBar .flagSelect {
+    position         : absolute;
+    top              : 15px;
+    left             : 30px;
+    width            : 20px;
+    height           : 16px;
+    padding          : 0px;
+    background-color : #A9D400;
+}
+.buttonBar .flag {
+    position : absolute;
+    top      : 17px;
+    width    : 16px;
+    height   : 12px;
+    padding  : 0px;
+}
+.buttonBar .flagNL.flag {
+    background : url(../images/NL.png);
+    left       : 32px;
+}
+.buttonBar .flagEN.flag {
+    background : url(../images/EN.png);
+    left       : 2px;
+}
+/*===========================================================================*/
+.mainBackgroundFade {
+    top        : 461px;
+    left       : 0px;
+    width      : 100%;
+    height     : 696px;
+    background : url(../images/fadeBack.png) repeat-x;
+}
+.fotoVertSepLine {
+    left       : 617px;
+    top        : 550px;
+    width      : 3px;
+    height     : 470px;
+    background : url(../images/mainSeperatorLine.png) repeat-y;
+}
+.mainBackground {
+    left             : 35px;
+    top              : 507px;
+    width            : 890px;
+    height           : 641px;
+    background-color : white;
+}
+.foto {
+    position : absolute;
+    left     : 35px;
+    top      : 228px;
+    width    : 890px;
+    height   : 268px;
+}
+/*===========================================================================*/
+.mainArea {
+    left   : 76px;
+    top    : 544px;
+    width  : 472px;
+    height : 400px;
+}
+.wide {
+    width : 800px;
+}
+.sfSmall {
+    padding-left : 20px;
+}
+.contactInfo {
+    padding-left : 50px;
+    font-size    : 17px;
+}
+/*===========================================================================*/
+.wieZijnWij {
+    left   : 636px;
+    top    : 544px;
+    width  : 251px;
+    height : 400px;
+}
+H1.rechts {
+    text-align : right;
+    margin     : 3px 0px 0px 0px;
+}
+table.koppen {
+    border-spacing : 1px;
+    margin         : 0px;
+    padding        : 0px;
+    width          : 100%;
+}
+table.koppen tr td.naam {
+    text-align    : right;
+    padding-right : 10px;
+    font-size     : 14px;
+    color         : #3b5500;
+}
+div.pasfoto {
+    position           : relative;
+    margin-top         : 9px;
+    margin-bottom      : 13px;
+    width              : 67px;
+    height             : 67px;
+    -webkit-transition : background-image 1s;
+}
+div.wim {
+    background-image : url("../images/grayWim.jpg");
+}
+div.wim:hover {
+    background-image : url("../images/colorWim.jpg");
+}
+div.tom {
+    background-image : url("../images/grayTom.jpg");
+}
+div.tom:hover {
+    background-image : url("../images/colorTom.jpg");
+}
+div.ronald {
+    background-image : url("../images/grayRonald.jpg");
+}
+div.ronald:hover {
+    background-image : url("../images/colorRonald.jpg");
+}
+/*=========================== links ===========================*/
+a {
+    text-decoration : underline;
+}
+a:link {
+    color  : #2AAAE4;
+    cursor : pointer;
+}
+a:visited {
+    color : #496700;
+}
+a:hover {
+    color : #66A200;
+}
+a * {
+    color           : #2AAAE4;
+    text-decoration : underline;
+}
+/*=========================== colors ===========================*/
+.color_1 {
+    color : #2AAAE4;
+}
+.color_2 {
+    color : #66A200;
+}
+.color_3 {
+    color : #496700;
+}
+.color_4 {
+    color : #6F7C91;
+}
+.color_5 {
+    color : #A9D400;
+}
+.color_6 {
+    color : #303C52;
+}
+.color_7 {
+    color : #EEFFEE;
+}
