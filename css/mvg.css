@@ -60,7 +60,7 @@ H1.first {
 }
 /*===========================================================================*/
 .main {
-    top         : 0px;
+    top         : 0;
     left        : 50%;
     height      : 1156px;
     width       : 960px;
@@ -118,42 +118,12 @@ H1.first {
 }
 .buttonBar .middle {
     background : url(../images/buttonMiddle.png) repeat-x;
-    padding    : 0px;
+    padding    : 0;
     height     : 41px;
 }
 .buttonBar .right {
     background : url(../images/buttonRight.png);
     width      : 33px;
-}
-.buttonBar .flags {
-    float    : right;
-    position : relative;
-    top      : 0px;
-    width    : 57px;
-}
-.buttonBar .flagSelect {
-    position         : absolute;
-    top              : 15px;
-    left             : 30px;
-    width            : 20px;
-    height           : 16px;
-    padding          : 0px;
-    background-color : #A9D400;
-}
-.buttonBar .flag {
-    position : absolute;
-    top      : 17px;
-    width    : 16px;
-    height   : 12px;
-    padding  : 0px;
-}
-.buttonBar .flagNL.flag {
-    background : url(../images/NL.png);
-    left       : 32px;
-}
-.buttonBar .flagEN.flag {
-    background : url(../images/EN.png);
-    left       : 2px;
 }
 /*===========================================================================*/
 .mainBackgroundFade {
