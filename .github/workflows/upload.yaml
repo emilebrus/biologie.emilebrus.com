@@ -14,5 +14,5 @@ jobs:
           ftp -n -v -p "${{secrets.FTP_HOST}}" <<EOF
           user ${{secrets.FTP_USER}} ${{secrets.FTP_PASSWORD}}
           cd public_html
-          ls
+          put index.html
           EOF
