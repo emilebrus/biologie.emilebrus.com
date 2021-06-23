@@ -13,6 +13,6 @@ jobs:
       - run: |
           ftp -n -v -p "${{secrets.FTP_HOST}}" <<EOF
           user ${{secrets.FTP_USER}} ${{secrets.FTP_PASSWORD}}
-          help
+          cd public_html
           ls
           EOF
