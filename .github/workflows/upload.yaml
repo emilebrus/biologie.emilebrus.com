@@ -14,6 +14,5 @@ jobs:
           ftp -n -v -p "${{secrets.FTP_HOST}}" <<EOF
           user ${{secrets.FTP_USER}} ${{secrets.FTP_PASSWORD}}
           cd public_html
-          put index.html
-          put css/mvg.css
+          $(find * -type f | sed 's/^/put /')
           EOF
