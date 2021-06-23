@@ -5,13 +5,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-20.04
-    env:
-      FTP_USER: "${{secrets.FTP_USER}}"
-      FTP_PASSWORD: "${{secrets.FTP_PASSWORD}}"
     steps:
       - uses: actions/checkout@v2.3.4
         with:
           fetch-depth: 0
 
       - run: |
-          ftp -?
+          ftp "${{secrets.FTP_HOST}}" <<EOF
+          user "${{secrets.FTP_USER}}" "${{secrets.FTP_PASSWORD}}"
+          ls
+          EOF
