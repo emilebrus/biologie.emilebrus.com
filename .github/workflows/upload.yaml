@@ -11,7 +11,7 @@ jobs:
           fetch-depth: 0
 
       - run: |
-          ftp "${{secrets.FTP_HOST}}" <<EOF
-          user "${{secrets.FTP_USER}}" "${{secrets.FTP_PASSWORD}}"
+          ftp -n "${{secrets.FTP_HOST}}" <<EOF
+          user ${{secrets.FTP_USER}} ${{secrets.FTP_PASSWORD}}
           ls
           EOF
