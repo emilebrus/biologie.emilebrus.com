@@ -24,8 +24,6 @@ function getPageParams () {
 }
 
 var MVG_PAGE;
-var MVG_NLS;
-var MVG_ENS;
 var MVG_P0S;
 var MVG_P1S;
 var MVG_P2S;
@@ -64,7 +62,6 @@ function getPageParamsAndSelectState () {
 }
 
 function selectState (pageParams) {
-    var defaultLang = (window.navigator.userLanguage || window.navigator.language || "NL").substr(0, 2).toUpperCase();
     var defaultPage = "p0";
     selectPage(pageParams.page && pageParams.page.match(/p[0-4]/) ? pageParams.page : defaultPage, false);
 }
@@ -74,19 +71,19 @@ function buttonBarClick () {
 }
 
 function makeButtonBar (titles) {
-    document.write('<div class="buttonBar noselect">');
+    document.write('<div class="buttonBar noselect abs">');
     var left = 0;
     $.each(titles, function (i) {
-        document.write('<div page=p'+i+' style="left:'+left+'px" class="P'+i+' inact"><span class=NL style:"z-index: 100">'+titles[i]+'</span></div>');
+        document.write('<div page=p'+i+' style="left:'+left+'px" class="P'+i+' inact abs"><span class="abs" style:"z-index: 100">'+titles[i]+'</span></div>');
         left += 111;
     });
-    document.write('<div class=left style="left:'+left+'px">');
+    document.write('<div class="left abs" style="left:'+left+'px">');
     document.write('</div>');
     left += 33;
-    document.write('<div class=middle style="left:'+left+'px;width:'+(858-left)+'px">');
+    document.write('<div class="middle abs" style="left:'+left+'px;width:'+(858-left)+'px">');
     document.write('</div>');
     left = 858;
-    document.write('<div class=right style="left:'+left+'px">');
+    document.write('<div class="right abs" style="left:'+left+'px">');
     document.write('</div>');
     document.write('</div>');
 }
@@ -97,8 +94,6 @@ $(function () {
     var dot = '&#8203;.&#8203;';
     $('.fillWithMail').html("info"+at+"modelingvalue"+dot+"nl");
 
-    MVG_NLS = $(".NL");
-    MVG_ENS = $(".EN");
     MVG_P0S = $(".p0");
     MVG_P1S = $(".p1");
     MVG_P2S = $(".p2");
